@@ -23,6 +23,26 @@ uv run python tests/manual_loop_smoke.py  # agent loop + tool call on YOUR model
 
 `SMOKE PASS` means your setup works for every project in the repo.
 
+## No uv? Plain pip works too
+
+[uv](https://docs.astral.sh/uv/) is recommended (fast, handles the env for
+you), but nothing here requires it — every `agent.py` self-locates the repo
+root, so the package never needs installing. A pinned `requirements.txt`
+ships at the repo root:
+
+```bash
+python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
+pip install -r requirements.txt                      # includes skills-ref (validator) + pytest
+python tests/manual_loop_smoke.py                    # same 30-second check
+
+# then run any project the same way, dropping the `uv run` prefix:
+python projects/everyday/fridge-whisperer/agent.py "Plan 3 dinners for 2."
+python -m agentkit.evals projects/everyday/fridge-whisperer
+```
+
+(`requirements.txt` is generated from the uv lock — regenerate with
+`uv export --no-hashes --no-emit-project -o requirements.txt`.)
+
 ## Path A — Ollama (simplest)
 
 ```bash

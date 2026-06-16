@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/media/social-preview.png" alt="AgentDay-Example — wicked smart agents: pick a lane, pick your models, ship a skill" width="820">
+</p>
+
 # AgentDay-Example
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-3DA639)](LICENSE)
@@ -106,6 +110,7 @@ before the event; fork them during it.
 [Deployment tracks: bare Python / OpenClaw / ZeroClaw](docs/DEPLOYMENT-TRACKS.md) ·
 [Lane 2 playbook (fork BriefingClaw)](docs/LANE2-PLAYBOOK.md) ·
 [Ten more project ideas](docs/ideas-appendix.md) ·
+[Printable cheat sheet (PDF)](docs/cheat-sheet.pdf) ·
 [Templates](templates/)
 
 Reference architecture for the event:

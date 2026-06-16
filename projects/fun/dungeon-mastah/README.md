@@ -2,6 +2,8 @@
 
 > Theme: fun · Lane: L1 · Difficulty: 🦞 · Offline: fully · Keys: none
 
+![dungeon-mastah resolving a crowbar attack — the roll_dice tool fires and the dice line is quoted in the scene](../../../docs/media/dungeon-mastah.gif)
+
 ## Pitch
 
 A tabletop GM agent that runs theater-of-the-mind one-shots — wicked funny,

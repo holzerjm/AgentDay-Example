@@ -2,6 +2,8 @@
 
 > Theme: chief-of-staff · Lane: L3 · Difficulty: 🦞🦞🦞 · Offline: fully (all-local mode) · Keys: optional (frontier + Tavily upgrade paths)
 
+![chief-of-stuff building a morning brief and printing its per-agent routing table](../../../docs/media/chief-of-stuff.gif)
+
 ## Pitch
 
 A `briefcase/` folder holds your working life — calendar, todos, meeting

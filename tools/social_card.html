@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- Repo social preview, 1280x640. Render:
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+       --headless=new --disable-gpu --force-device-scale-factor=1 --hide-scrollbars \
+       --window-size=1280,640 --screenshot=docs/media/social-preview.png \
+       file://$PWD/tools/social_card.html -->
+<html>
+<head><meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 640px; overflow: hidden;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .card { width: 1280px; height: 640px; position: relative; color: #F8FAFC;
+    background:
+      radial-gradient(1100px 540px at 86% -8%, rgba(204,0,0,.30), transparent 60%),
+      radial-gradient(820px 520px at -6% 116%, rgba(56,108,255,.26), transparent 62%),
+      linear-gradient(135deg, #0B1020 0%, #141A33 52%, #0D1226 100%);
+    padding: 72px 80px; display: flex; flex-direction: column; justify-content: space-between; }
+  .top { display: flex; align-items: center; gap: 16px; font-size: 23px; letter-spacing: .5px;
+    color: #C9D2E3; font-weight: 600; }
+  .pill { border: 1px solid rgba(255,255,255,.22); border-radius: 999px; padding: 7px 17px;
+    font-size: 18px; color: #E7ECF5; background: rgba(255,255,255,.05); }
+  h1 { font-size: 92px; font-weight: 800; letter-spacing: -1.5px; line-height: .98; }
+  h1 .mono { font-family: "SF Mono", "JetBrains Mono", ui-monospace, Menlo, monospace; }
+  .tag { font-size: 31px; color: #AEB9D0; margin-top: 20px; font-weight: 500; }
+  .tag b { color: #FF6B6B; font-weight: 700; }
+  .chips { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+  .chip { font-size: 21px; padding: 9px 19px; border-radius: 12px; font-weight: 600;
+    background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); }
+  .chip b { color: #FFD166; }
+  .bottom { display: flex; justify-content: space-between; align-items: flex-end; }
+  .stats { display: flex; gap: 40px; }
+  .stat .n { font-size: 46px; font-weight: 800; color: #FFFFFF; }
+  .stat .l { font-size: 18px; color: #93A0BD; margin-top: 2px; letter-spacing: .3px; }
+  .repo { text-align: right; font-size: 23px; color: #C9D2E3; }
+  .repo .h { font-family: ui-monospace, Menlo, monospace; font-size: 26px; color: #FFFFFF; font-weight: 600; }
+  .lobster { position: absolute; right: 64px; top: 150px; font-size: 150px; opacity: .14;
+    transform: rotate(12deg); }
+</style></head>
+<body>
+  <div class="card">
+    <div class="lobster">🦞</div>
+    <div class="top">
+      <span class="pill">TOA Agent Build Day</span>
+      <span>Sat June 27, 2026 &middot; Fort Point, Boston</span>
+    </div>
+    <div>
+      <h1><span class="mono">AgentDay</span>-Example</h1>
+      <div class="tag">Wicked smart agents &mdash; pick a lane, pick your models, <b>ship a skill</b>.</div>
+      <div class="chips">
+        <span class="chip">9 starter projects</span>
+        <span class="chip">social good &middot; everyday &middot; chief-of-staff &middot; fun</span>
+        <span class="chip"><b>zero</b> API keys required</span>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="stats">
+        <div class="stat"><div class="n">10/10</div><div class="l">skills validate</div></div>
+        <div class="stat"><div class="n">9/9</div><div class="l">positive eval deltas</div></div>
+        <div class="stat"><div class="n">4</div><div class="l">model providers</div></div>
+      </div>
+      <div class="repo">local-first &middot; Granite &middot; Claude &middot; GPT &middot; Gemini<br>
+        <span class="h">github.com/holzerjm/AgentDay-Example</span></div>
+    </div>
+  </div>
+</body></html>
